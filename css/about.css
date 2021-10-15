@@ -1,0 +1,385 @@
+@charset "UTF-8";
+/*=========================
+=======base=============*/
+html {
+font-size: 62.5%;
+}
+body {
+font-family: 'Montserrat', 'Noto sans JP', sans-serif;
+font-size: 1.6rem;
+}
+img {
+width: 100%;
+vertical-align: bottom;
+}
+a {
+text-decoration: none;
+color: #fff;
+}
+a:hover{
+    opacity: .7;
+    transition: .3s;
+}
+button {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+border: 0;
+background-color: transparent;
+}
+.section-wrapper {
+padding: 120px 0;
+}
+.section__inner{
+    padding: 0 4vw;
+}
+.section-title {
+font-size: 3.2rem;
+margin-bottom: 30px;
+font-weight: bold;
+}
+.link-btn {
+display: inline-block;
+background-color: black;
+line-height: 36px;
+font-size: 1.2rem;
+padding: 0 40px;
+}
+time {
+display: block;
+font-size: 1rem;
+color: #CECECE;
+margin-bottom: 13px;
+}
+/*=========================
+=======header=============*/
+.header {
+padding: 30px 4vw;
+box-sizing: border-box;
+width: 100%;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+}
+.header__inner {
+max-width: 1100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.site-title {
+max-width: 260px;
+}
+.header-nav {
+position: fixed;
+z-index: 2;
+top: 0;
+right: 0;
+background-color:rgba(34,34,34,.95);
+height: 100vh;
+width: 40%;
+text-align: center;
+padding-top: 180px;
+margin-right: -40%;
+opacity: .9;
+}
+.header-nav__item {
+margin-bottom: 30px;
+font-weight: bold;
+font-size: 2rem;
+}
+.header-nav__item img {
+background-color: rgba(0,0,0,0);
+}
+.header-nav__item:first-of-type {
+width: 42px;
+margin: 0 auto 40px;
+}
+.site-title.black svg path{
+fill: #333;
+transition: fill .3s;
+}
+.brager-btn.black .bar{
+background-color: #333;
+transition: background-color .3s;
+}
+.brager-btn.black .menu-btn{
+color: #333;
+transition: color .3s;
+}
+/*=========================
+=======brager-btn閉じているとき=============*/
+.brager-btn {
+display: flex;
+/* justify-content: space-between; */
+align-items: center;
+position: fixed;
+z-index: 3;
+right: 58px;
+}
+.bar {
+display: block;
+width: 22px;
+height: 2px;
+background-color: #fff;
+margin-right: 7px;
+border-radius: 1px;
+}
+.bars__top,
+.bars__mid {
+margin-bottom: 5px;
+}
+.menu-btn{
+display: block;
+font-size: 1rem;
+color: #fff;
+font-weight: bold;
+}
+/*=========================
+=======brager-btn開いているとき=============*/
+.bars__top.open{
+transform: translateY(6px)rotate(35deg);
+transition: .3s;
+}
+.bars__mid.open{
+opacity: 0;
+transition: .3s;
+}
+.bars__btm.open{
+transform: translateY(-8px)rotate(-35deg);
+transition: .3s;
+}
+body.no-scroll{
+overflow: hidden;
+}
+body.musk{
+width: 100%;
+height:100%;
+background-color: #222;
+opacity: .5;
+z-index: 100;
+}
+/*=========================
+=======fv=============*/
+.fv {
+height: 52vh;
+min-height: 464px;
+position: relative;
+}
+.fv__wrap {
+background-image: url(../img/jacek-dylag-PMxT-1.png);
+background-size: cover;
+background-position: center 0;
+height: 83.4%;
+width: 76.4%;
+}
+.fv::after {
+content: "";
+display: block;
+position: absolute;
+width: 50%;
+height: 52vh;
+min-height: 464px;
+background-color: #222;
+right: 0;
+top: 0;
+z-index: -1;
+}
+.copy {
+color: #fff;
+position: absolute;
+top: 33.6%;
+right: 12.5%;
+font-size: 2rem;
+}
+.copy__main {
+font-size: 7.2rem;
+text-transform: uppercase;
+font-weight: bold;
+}
+.copy__jp{
+    font-weight: normal;
+    font-size: 2rem;
+}
+/*=========================
+=======vision=============*/
+.vision__txt_wrapper{
+    max-width: 415px;
+    margin-left: 27.5%;
+    line-height: 2;
+    text-align: left;
+}
+.section-title__sub{
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+}
+.vision__txt{
+    margin-bottom: 32px;
+}
+.vision__txt:last-of-type{
+    margin-bottom: 0;
+}
+/*=========================
+=======message=============*/
+.message{
+    padding-top: 113px;
+    line-height: 2;
+}
+.message__inner{
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+.message__title{
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.message_img-wrap{
+    width: 36.7%;
+    min-width: 320px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+.message__txt-wrap{
+    max-width: 770px;
+    width: 70%;
+    background-color: #F0F0F0;
+    z-index: -1;
+    box-sizing: border-box;
+    padding: 15.6vw 15vw 11.7vw;
+    margin-left: auto;
+    position: relative;
+    top: 200px;
+    margin-bottom: 120px;
+}
+.message__txt{
+    margin-bottom: 32px;
+}
+.message__txt:last-of-type{
+    margin-bottom: 0;
+}
+/*=========================
+=======company=============*/
+.company__inner{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.company__cont{
+    width: 100%;
+    border-top:  2px #DDDDDD solid;
+}
+.company__list{
+    border-bottom: 2px #DDDDDD solid;
+    text-align: left;
+    display: block;
+    width: 72.7%;
+    margin-left: auto;
+}
+.company__list:last-of-type{
+    margin-bottom: 40px;
+}
+.company__item-01{
+    padding: 20px 0;
+    width: 142px;
+}
+.maps__outer{
+    position:relative;
+    width:100%;
+    height:0;
+    padding-top:32.7%;
+}
+.maps__outer iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+/*=========================
+=======footer=============*/
+.footer {
+padding: 20px;
+background-color: #525252;
+font-size: 1rem;
+text-align: center;
+color: #fff;
+}
+/*=========================
+=======media=============*/
+@media screen and (max-width: 768px) {
+.link-btn {
+    font-size: 1.1rem;
+}
+.site-title {
+    max-width: 189px;
+}
+/*=========================
+=======fv__sp=============*/
+.copy {
+    font-size: 1.6rem;
+    top: 43%;
+    right: 13%;
+}
+.copy__main {
+    font-size: 5.6rem;
+}
+/*=========================
+=======message__sp=============*/
+.message__txt-wrap{
+    padding: 15.6vw 2vw 11.7vw;
+}
+.message_img-wrap{
+    max-width: 320px;
+}
+/*=========================
+=======company__tb=============*/
+.company__list{
+    width: 100%;
+}
+}/*-- //768 */
+
+
+@media screen and (max-width: 480px){
+/*=========================
+=======base__sp=============*/
+body{
+    font-size: 1.4rem;
+}
+/*=========================
+=======header__sp=============*/  
+svg{
+    max-width: 125.7px;
+    max-height: 20.61px;
+    }
+/*=========================
+=======fv__sp=============*/ 
+.copy{
+    top: 33.1%;
+    left: 13.6%;
+    }
+.copy__main{
+    white-space: nowrap;
+    font-size: 5.1rem;
+    font-weight: bold;
+    }
+/*=========================
+=======vision__sp=============*/  
+.vision__txt_wrapper{
+    margin: 0 auto;
+    }
+/*=========================
+=======message__sp=============*/
+.message_img-wrap{
+    left: 0;
+}
+.message__txt-wrap{
+    width: 100%;
+}
+/*=========================
+=======company__sp=============*/
+.maps__outer{
+    padding-top: 136.2%;
+}
+}/*-- //480*/
